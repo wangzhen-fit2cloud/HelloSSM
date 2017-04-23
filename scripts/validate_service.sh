@@ -1,7 +1,7 @@
 #!/bin/bash
 
-processesNum=`ps aux | grep SimpleHTTPServer | grep 8080 | grep -v grep | wc -l | sed 's/ //g'`
-if [ "$processesNum" == "1" ];then
+checkResult=`curl -s http://192.168.0.200:8080/HelloSSM/ | grep Welcome  2>&1 > /dev/null; echo $?`
+if [ "$checkResult" == "0" ];then
     exit 0
 else 
     exit 1
