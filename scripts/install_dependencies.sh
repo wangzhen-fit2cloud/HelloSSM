@@ -1,8 +1,4 @@
 #!/bin/bash
 
-echo install dependencies
-if [ -d /opt/fit2cloud-demo ];then
-    echo /opt/fit2cloud-demo exists
-else
-    mkdir -p /opt/fit2cloud-demo
-fi
+echo "-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT" >> /etc/sysconfig/iptables
+service iptables reload
