@@ -2,8 +2,6 @@
 <html>
 <body>
     <h1> Welcome </h1>
-    <span>current version: V1.0-b$buildId</span>
-    <button href="/user/userManage/">userList</button>
-
+    <span>current version: V1.0-b#BUILD_NUMBER#</span>
 </body>
 </html>

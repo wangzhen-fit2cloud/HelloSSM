@@ -7,4 +7,4 @@ service iptables reload
 if [ ! -d "/var/lib/tomcat6/webapps/HelloSSM" ]; then
   mkdir /var/lib/tomcat6/webapps/HelloSSM
 fi
-chown tomcat:tomcat /var/lib/tomcat6/webapps/HelloSSM
+chown -R tomcat:tomcat /var/lib/tomcat6/webapps/HelloSSM
