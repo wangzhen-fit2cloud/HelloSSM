@@ -2,7 +2,7 @@ version: 4.2
 os: linux
 files:
   - source: target/HelloSSM/ 
-    destination: /var/lib/tomcat6/webapps/
+    destination: /var/lib/tomcat6/webapps/HelloSSM
   - source: src/main/resources/jdbc.properties
     destination: /var/lib/tomcat6/webapps/HelloSSM/WEB-INF/classes/
 hooks:
